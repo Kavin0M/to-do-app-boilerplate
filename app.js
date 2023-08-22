@@ -27,6 +27,9 @@ function outputDoc() {
 
 function editList(index) {
     var newAct = prompt("Please insert your new value");
+    while (!newAct){
+        newAct = prompt("Please enter a proper text !!!")
+    }
     list.splice(index, 1, newAct);
     outputDoc();
 }
